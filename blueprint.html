@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Blueprint</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Create Blueprint</h2>
+
+<nav>
+  <a href="index.html">Dashboard</a> |
+  <a href="blueprint.html">Create Blueprint</a> |
+  <a href="create-contract.html">Create Contract</a>
+</nav>
+
+<hr>
+
+<label>Blueprint Name:</label>
+<input type="text" id="blueprintName">
+
+<h4>Add Field</h4>
+
+<select id="fieldType">
+  <option>Text</option>
+  <option>Date</option>
+  <option>Checkbox</option>
+  <option>Signature</option>
+</select>
+
+<input type="text" id="fieldLabel" placeholder="Field label">
+
+<button onclick="addField()">Add Field</button>
+
+<h4>Fields Preview</h4>
+<ul id="fieldList"></ul>
+
+<button onclick="saveBlueprint()">Save Blueprint</button>
+
+<script src="data.js"></script>
+<script src="blueprint.js"></script>
+</body>
+</html>

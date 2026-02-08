@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>View Contract</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a href="index.html">← Back</a>
+
+<p>Name: <span id="contractName"></span></p>
+<p>Status: <span id="contractStatus"></span></p>
+
+<button onclick="changeStatus('Approved')">Approve</button>
+<button onclick="changeStatus('Signed')">Sign</button>
+<button onclick="changeStatus('Revoked')">Revoke</button>
+
+<script src="data.js"></script>
+<script src="contract-view.js"></script>
+</body>
+</html>
